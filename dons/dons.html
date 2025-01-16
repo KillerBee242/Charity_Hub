@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font : Jomhuria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font : Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/dons/dons.css">
+    <!-- Title -->
     <title>Dons</title>
 </head>
+
 <body>
-    
+    <div class="">
+
+        <nav class="bg-[#082A4C] mx-auto px-[100px] py-3 w-full">
+            <ul>
+                <li class="flex items-center justify-between">
+                    <a href=""><img src="/dons/images/logo.png" alt="logo" class="w-[130px]"></a>
+                    <div class="text-white space-x-10 font-light">
+                        <a href="" class="hover:text-[#FFB31A]">Accueil</a>
+                        <a href="" class="hover:text-[#FFB31A]">À Propos</a>
+                        <a href="" class="hover:text-[#FFB31A]">Projets</a>
+                        <a href="" class="hover:text-[#FFB31A]">Dons</a>
+                        <a href="" class="hover:text-[#FFB31A]">Contacts</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Hero -->
+        <section class="relative">
+            <div class="container mx-auto px-4 py-12">
+                <div class="relative">
+                    <img src="/dons/images/hero_dons.png" alt="dons" class="w-full h-auto object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h1 class="bg-[#082A4C] text-white text-center text-4xl px-20 rounded sm:text-5xl md:text-6xl lg:text-7xl">
+                            <span class="block mb-[-70px] mt-[-40px]">Faire un don</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-[50px] mb-[150px] flex justify-center">
+            <div class="">
+                <h2 class="text-[#082A4C] text-center text-[100px] rounded">Formulaire de don</h2>
+                <!-- Form -->
+                <div id="box" class="px-[100px] py-[50px] mx-[100px] flex justify-center items-center rounded">
+                    <div id="picture" class="size-[500px] mr-20">
+                        <img src="/dons/images/don_image.webp" alt="image" class="rounded">
+                    </div>
+                    <div class="text-[#082A4C] space-y-6 w-fit">
+                        <h3 class="text-2xl font-bold text-center">Faites la différence !</h3>
+                        <!-- Text fields -->
+                        <div>
+                            <h4 class="mb-2 font-medium text-lg">Nom complet</h4>
+                            <input type="text" placeholder="Vos noms et prénoms" class="w-full border-[2px] border-[#082A4C] bord rounded px-2 py-2">
+                        </div>
+                        <div>
+                            <h4 class="mb-2 font-medium text-lg">Adresse e-mail</h4>
+                            <input type="text" placeholder="Votre adresse électronique" class="w-full border-[2px] border-[#082A4C] bord rounded px-2 py-2">
+                        </div>
+                        <div>
+                            <h4 class="mb-2 font-medium text-lg">Montant du don</h4>
+                            <select name="money" class="w-full border-[2px] border-[#082A4C] bord rounded px-2 py-2 cursor-pointer">
+                                <option value="1">10$</option>
+                                <option value="2">25$</option>
+                                <option value="3">50$</option>
+                                <option value="4">100$</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4 class="mb-2 font-medium text-lg">Options de paiement</h4>
+                            <select name="money" class="w-full border-[2px] border-[#082A4C] bord rounded px-2 py-2 cursor-pointer">
+                                <option value="1">🅿 PayPal</option>
+                                <option value="2">Ⓜ MasterCard</option>
+                                <option value="3">🆗 Visa Card</option>
+                            </select>
+                        </div>
+                        <p class="text-center">Chaque 10 € que vous donnez permet de fournir un repas nutritif à une famille de quatre personnes.</p>
+                        <div class="text-center">
+                            <button class="bg-[#082A4C] text-white px-10 py-3 rounded font-light hover:bg-[#FFB31A] hover:text-[#082A4C] hover:font-semibold">Faire un don</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
 </body>
+
+<footer class="bg-[#082A4C] text-white bottom px-[100px] py-5 m-0">
+    <div class="flex justify-between items-center font-light text-sm">
+        <img src="/dons/images/logo_white.png" alt="logo" class="w-[100px]">
+        <p>ChariSen 2025. Tous droits réservés. Developed by Gomycode Team.</p>
+        <div class="flex space-x-5">
+            <p>FAQ</p>
+            <p>Politique de confidentialité</p>
+            <p>Termes d'utilisation</p>
+        </div>
+    </div>
+</footer>
+
 </html>

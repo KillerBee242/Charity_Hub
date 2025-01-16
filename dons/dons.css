@@ -1,0 +1,10 @@
+body, footer {
+    font-family: outfit;
+}
+
+h1, h2 {
+    font-family: Jomhuria;
+}
+#box {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -5px -5px 10px rgba(0, 0, 0, 0.05);
+}
