@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/d3a9a182ea.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/initiatives.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Initiatives</title>	
+</head>
+
+<body class="font-outfit">
+
+   <!-- header :Nav bar Responsive -->
+   <nav class="fixed top-0 left-0 w-full z-50 bg-blue-950">
+    <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button -->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex-shrink-0">
+            <!-- Smaller logo -->
+            <img class="h-6 w-auto" src="/Images/accueil/logo.png1.png" alt="Your Company">
+          </div>
+          <div class="hidden sm:flex sm:flex-1 sm:justify-end sm:space-x-4">
+            <a href="/html/accueil.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+            <a href="/html/a-propos.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">A propos</a>
+            <a href="/html/initiatives.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projets</a>
+            <a href="/html/dons.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dons</a>
+            <a href="/html/contacts.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contacts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sm:hidden hidden transition-all duration-300 ease-in-out" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="/html/accueil.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Accueil</a>
+        <a href="/html/a-propos.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">A propos</a>
+        <a href="/html/initiatives.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projets</a>
+        <a href="/html/dons.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dons</a>
+        <a href="/html/contacts.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacts</a>
+      </div>
+    </div>
+  </nav>
+   <!-- Fin Nav bar -->
+
+    <!-- Debut des Actions Initiatives -->
+ <section id="initiatives">
+     <h1 class="text-[#082A4C] text-4xl font-bold text-center mt-20"> Nos Initiatives </h1>
+     <h4 class="text-[#082A4C] text-xl semi-bold text-center my-5"> Ce dans quoi nous sommes engagés: </h4>
+     <div class="container mx-auto">
+
+        <!-- Ligne de code pour la responsivite -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-5">
+
+            <!-- Carte 1-->
+            <div class=" bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="/images/initiatives/image-3.webp" alt="Image1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                <h2 class="text-2xl text-[#082A4C] font-bold"> Soutien pour l'Education </h2>
+                <p class="text-[#082A4C]"> Nous soutenons l'éducation en offrant des ressources et des opportunités d'apprentissage aux enfants et aux jeunes.
+                    Grâce à des programmes de tutorat et des ateliers éducatifs, nous aidons à combler les lacunes scolaires et à encourager la réussite académique.
+                    Nous créons un environnement propice à l'épanouissement et à la réussite de chaque enfant.
+                </p> 
+                    <button class="text-white font-bold bg-[#082A4C] py-2 px-4 rounded mt-4">
+                        <a href="/html/dons.html">Faire un don</a>
+                    </button> 
+                </div>
+            </div> 
+
+            <!-- Carte 2-->
+            <div class=" bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="/images/initiatives/image-11.webp" alt="Image1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <h2 class="text-2xl text-[#082A4C] font-bold"> Solidarité Habitat </h2>
+                  <p class="text-[#082A4C]"> Nous aidons des familles à sortir de la précarité
+                     en leur trouvant un logement stable. Grâce à un accompagnement personnalisé, l'organisation
+                     fourni également des conseils financiers et un soutien social pour assurer leur intégration durable.
+                      Cette action permet d'améliorer significativement la qualité de vie des familles et de renforcer leurs autonomies. </p> 
+                    <button class="text-white font-bold bg-[#082A4C] py-2 px-4 rounded mt-4">
+                        <a href="/html/dons.html">Faire un don</a>
+                    </button> 
+                </div>
+            </div>
+
+            <!-- Carte 3-->
+            <div class=" bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="/images/initiatives/image-12.webp" alt="Image1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <h2 class="text-2xl text-[#082A4C] font-bold"> Soutien Alimentaire </h2>
+                  <p class="text-[#082A4C]"> Nous soutenons les communautés locales 
+                    en fournissant des aliments frais et sains aux personnes dans le besoin. En collaboration avec des producteurs locaux, 
+                    nous organisons des distributions hebdomadaires pour garantir un accès régulier à des produits de qualité. De plus,
+                     nous sensibilisons à l'importance d'une alimentation équilibrée à travers des ateliers de nutrition. </p> 
+                    <button class="text-white font-bold bg-[#082A4C] py-2 px-4 rounded mt-4">
+                        <a href="/html/dons.html">Faire un don</a>
+                    </button> 
+                </div>
+            </div>
+
+            <!-- Carte 4-->
+            <div class=" bg-white shadow-md rounded-lg overflow-hidden mt-2">
+                <img src="/images/initiatives/image-14.webp" alt="Image1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <h2 class="text-2xl text-[#082A4C] font-bold"> Justice Solidaire  </h2>
+                  <p class="text-[#082A4C]"> Nous offrons une assistance juridique gratuite pour aider les personnes à faire
+                     valoir leurs droits. Nous soutenons activement les victimes de violences en leur fournissant des ressources
+                      et un accompagnement personnalisé. Nous œuvrons pour une société plus équitable et inclusive. </p> 
+                    <button class="text-white font-bold bg-[#082A4C] py-2 px-4 rounded mt-4">
+                        <a href="/html/dons.html">Faire un don</a>
+                    </button> 
+                </div>
+            </div>
+
+            <!-- Carte 5-->
+            <div class=" bg-white shadow-md rounded-lg overflow-hidden mt-2" >
+                <img src="/images/initiatives/image-17.webp" alt="Image1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <h2 class="text-2xl text-[#082A4C] font-bold"> Réinsertion Active  </h2>
+                  <p class="text-[#082A4C]"> Nous accompagnons les demandeurs d'emploi en leur offrant des conseils personnalisés 
+                    et des opportunités de mise en réseau. Nos programmes de formation professionnelle sont conçus pour améliorer 
+                    les compétences et augmenter les chances de trouver un emploi stable.</p> 
+                    <button class="text-white font-bold bg-[#082A4C] py-2 px-4 rounded mt-4">
+                        <a href="/html/dons.html">Faire un don</a>
+                    </button> 
+                </div>
+            </div>
+
+            <!-- Carte 6-->
+            <div class=" bg-white shadow-md rounded-lg overflow-hidden mt-2">
+                <img src="/images/initiatives/image.webp" alt="Image1" class="w-full h-48 object-cover">
+                <div class="p-4">
+                  <h2 class="text-2xl text-[#082A4C] font-bold"> Culture pour Tous </h2>
+                  <p class="text-[#082A4C]"> Nous organisons des animations socio-culturelles pour renforcer les liens
+                     communautaires et promouvoir l'inclusion. Nos activités variées, destinées aux jeunes et aux personnes âgées,
+                      favorisent l'épanouissement personnel et le bien-être. </p> 
+                    <button class="text-white font-bold bg-[#082A4C] py-2 px-4 rounded mt-4">
+                        <a href="/html/dons.html">Faire un don</a>
+                    </button> 
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+ <!-- Fin de la section initiative -->
+
+ <!-- Debut Footer -->
+ <footer class="bg-[#082A4C] text-white mt-10 py-6 w-full">
+    <!-- Section Copyright -->
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+        <!-- Logo et texte -->
+        <div class="flex flex-col items-center sm:flex-row sm:items-center sm:gap-4">
+          <img src="/images/initiatives/logo-123.png" alt="Logo" class="w-20 mb-4 sm:mb-0">
+          <p class="text-sm text-center sm:text-left">
+            &copy; 2025 CharitySen. Tous droits réservés.
+          </p>
+        </div>
+  
+        <!-- Liens supplémentaires (optionnel) -->
+        <div class="mt-4 sm:mt-0">
+          <ul class="flex flex-col items-center sm:flex-row sm:gap-6">
+            <li><a href="#" class="text-sm hover:text-gray-300">Mentions légales</a></li>
+            <li><a href="#" class="text-sm hover:text-gray-300">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>     
+  <!-- Fin Footer -->
+
+<!-- Toggle Menu Activation -->
+<script>
+
+    const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    mobileMenuButton.addEventListener('click', () => {
+      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+    });
+  
+  </script>
+       
+</body>
+</html>
