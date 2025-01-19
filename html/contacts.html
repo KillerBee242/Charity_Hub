@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d3a9a182ea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/contacts.css">            
+    <title>Contacts</title>
+</head>
+
+<body>
+
+  <nav class="fixed top-0 left-0 w-full z-50 bg-blue-950">
+    <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button -->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex-shrink-0">
+            <!-- Smaller logo -->
+            <img class="h-6 w-auto" src="/Images/accueil/logo.png1.png" alt="Your Company">
+          </div>
+          <div class="hidden sm:flex sm:flex-1 sm:justify-end sm:space-x-4">
+            <a href="/html/accueil.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+            <a href="/html/a-propos.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">A propos</a>
+            <a href="/html/initiatives.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projets</a>
+            <a href="/html/dons.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dons</a>
+            <a href="/html/contacts.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contacts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sm:hidden hidden transition-all duration-300 ease-in-out" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="/html/accueil.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Accueil</a>
+        <a href="/html/a-propos.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">A propos</a>
+        <a href="/html/initiatives.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projets</a>
+        <a href="/html/dons.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dons</a>
+        <a href="/html/contacts.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacts</a>
+      </div>
+    </div>
+  </nav>
+      
+    <form id="monFormulaire" class="m-10 p-10 md:p-12 md:flex-row gap-8 md:gap-16 justify-center items-center rounded mt-20">
+      <h2 class="text-3xl mb-6 text-center font-bold text-[#082A4C]">Formulaire de Contact</h2>
+      <h1 class="text-xl mb-6 text-center font-bold text-[#082A4C]">Faites la Différence</h1>
+      <form class="max-w-md mx-auto bg-white p-6 shadow-md rounded-md">
+        <div class="mb-4">
+          <label for="name" class="block text-[#082A4C] font-bold">Nom</label>
+          <input type="text" id="name" name="name" class="w-full p-2 border border-[#082A4C] rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-[#082A4C] font-bold">Adresse E-mail</label>
+          <input type="email" id="email" name="email" class="w-full p-2 border border-[#082A4C] rounded-md" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-[#082A4C] font-bold">Message</label>
+          <textarea id="message" name="message" class="w-full p-2 border border-[#082A4C] rounded-md" required></textarea>
+        </div>
+        <button type="submit" class="bg-[#082A4C] w-full text-white px-4 py-2 rounded-md">Envoyer</button>
+      </form>
+    </form>
+    
+    <section id="siege" class="p-6">
+      <h2 class="text-3xl font-bold text-center text-[#082A4C] mb-6">NOTRE SIÈGE</h2>
+      <h1 class="text-center text-lg font-bold mb-4">Point E en face Rond Point Mame Aziz Sy DABAH</h1>
+      <div class="max-w-lg mx-auto">
+        <iframe class="w-full h-[300px] md:h-[450px] rounded-md shadow-md" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246993.75545431726!2d-17.745323181152354!3d14.696896875148902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173bc46b201ef%3A0xb2b6ea366e36e602!2sGOMYCODE%20Dakar%20Point%20E!5e0!3m2!1sfr!2ssn!4v1737031302555!5m2!1sfr!2ssn"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+    
+    <section id="activites" class="p-6">
+      <h2 class="text-3xl mb-6 text-center font-bold">NOS ACTIVITÉS EN LIGNE</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="bg-[#082A4C] p-4 shadow-md rounded-md flex items-center justify-center">
+          <a href="#"><i class="fa-brands fa-twitter fa-beat-fade text-blue-50 text-5xl"></i></a>
+        </div>
+        <div class="bg-[#082A4C] p-4 shadow-md rounded-md flex items-center justify-center">
+          <a href="#"><i class="fa-brands fa-linkedin fa-beat-fade text-blue-50 text-5xl"></i></a>
+        </div>
+        <div class="bg-[#082A4C] p-4 shadow-md rounded-md flex items-center justify-center">
+          <a href="#"><i class="fa-brands fa-facebook fa-beat-fade text-blue-50 text-5xl"></i></a>
+        </div>
+        <div class="bg-[#082A4C] p-4 shadow-md rounded-md flex items-center justify-center">
+          <a href="#"><i class="fa-brands fa-instagram fa-beat-fade text-blue-50 text-5xl"></i></a>
+        </div>
+      </div>
+    </section>
+  
+ <!-- Debut Footer -->
+ <footer class="bg-[#082A4C] text-white py-6 w-full">
+  <!-- Section Copyright -->
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+      <!-- Logo et texte -->
+      <div class="flex flex-col items-center sm:flex-row sm:items-center sm:gap-4">
+        <img src="/images/initiatives/logo-123.png" alt="Logo" class="w-20 mb-4 sm:mb-0">
+        <p class="text-sm text-center sm:text-left">
+          &copy; 2025 CharitySen. Tous droits réservés.
+        </p>
+      </div>
+
+      <!-- Liens supplémentaires (optionnel) -->
+      <div class="mt-4 sm:mt-0">
+        <ul class="flex flex-col items-center sm:flex-row sm:gap-6">
+          <li><a href="#" class="text-sm hover:text-gray-300">Mentions légales</a></li>
+          <li><a href="#" class="text-sm hover:text-gray-300">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>     
+<!-- Fin Footer -->
+  
+<!-- Toggle Menu Activation -->
+<script>
+
+  const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuButton.addEventListener('click', () => {
+    const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+    mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  document.getElementById("monFormulaire").addEventListener("submit",
+        function(event) {
+            event.preventDefault(); // Protection contre toute soumission par défaut
+            alert("Formulaire soumis avec succès !"); // Message de réussite
+            document.getElementById("monFormulaire").reset(); // Vidage du formulaire
+        });
+
+</script>
+  
+</body>
+
+</html>

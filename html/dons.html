@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font : Jomhuria -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font : Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/dons.css">
+    <!-- Title -->
+    <title>Dons</title>
+</head>
+
+<body>
+    <div class="">
+
+        <nav class="fixed top-0 left-0 w-full z-50 bg-blue-950">
+            <div class="w-full mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  <!-- Mobile menu button -->
+                  <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex-shrink-0">
+                    <!-- Smaller logo -->
+                    <img class="h-6 w-auto" src="/Images/accueil/logo.png1.png" alt="Your Company">
+                  </div>
+                  <div class="hidden sm:flex sm:flex-1 sm:justify-end sm:space-x-4">
+                    <a href="/html/accueil.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Accueil</a>
+                    <a href="/html/a-propos.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">A propos</a>
+                    <a href="/html/initiatives.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projets</a>
+                    <a href="/html/dons.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dons</a>
+                    <a href="/html/contacts.html" class="text-gray-300 hover:bg-yellow-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contacts</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sm:hidden hidden transition-all duration-300 ease-in-out" id="mobile-menu">
+              <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="/html/accueil.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Accueil</a>
+                <a href="/html/a-propos.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">A propos</a>
+                <a href="/html/initiatives.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projets</a>
+                <a href="/html/dons.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dons</a>
+                <a href="/html/contacts.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacts</a>
+              </div>
+            </div>
+          </nav>
+                
+        <!-- Hero -->
+        <section class="relative m-0">
+            <div class="container mx-auto">
+                <div class="relative h-[30vh] sm:h-[30vh] md:h-[40vh] lg:h-[50vh]">
+                    <img
+                        src="/images/dons/hero_dons.png"
+                        alt="dons"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <h1 class="bg-[#082A4C] text-white text-center rounded block px-10 py-4 font-bold text-4xl sm:text-2xl md:text-6xl lg:text-10xl leading-none">
+                            Faire un don
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-12 mb-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-[#082A4C] mb-8 text-center text-7xl sm:text-7xl md:text-9xl lg:text-12xl leading-none">
+                    Formulaire de don
+                </h2>
+                <!-- Form -->
+                <form id="monFormulaire" class="m-10 p-10 md:p-12 flex flex-col md:flex-row gap-8 md:gap-16 justify-center items-center rounded">
+                    <div id="picture" class="md:w-1/2">
+                        <img
+                            src="/images/dons/don_image.webp"
+                            alt="image"
+                            class="rounded w-full h-auto object-cover">
+                    </div>
+                    <div class="text-[#082A4C] space-y-6 md:w-1/2">
+                        <h3 class="text-2xl font-bold text-center">Faites la différence !</h3>
+                        <!-- Text fields -->
+                        <div>
+                            <label for="name" class="mb-2 font-medium text-lg">Nom complet</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Vos noms et prénoms"
+                                required
+                                class="w-full border-2 border-[#082A4C] bord rounded px-2 py-2">
+                        </div>
+                        <div>
+                            <label for="email" class="mb-2 font-medium text-lg">Adresse e-mail</label>
+                            <input 
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="Votre adresse électronique"
+                                class="w-full border-2 border-[#082A4C] bord rounded px-2 py-2">
+                        </div>
+                        <div>
+                            <label for="subject" class="mb-2 font-medium text-lg">Montant du don</label>
+                            <select id="subject" name="subject" class="w-full border-2 border-[#082A4C] bord rounded px-2 py-2 cursor-pointer">
+                                <option value="1">10$</option>
+                                <option value="2">25$</option>
+                                <option value="3">50$</option>
+                                <option value="4">100$</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4 class="mb-2 font-medium text-lg">Options de paiement</h4>
+                            <select name="payment" class="w-full border-2 border-[#082A4C] bord rounded px-2 py-2 cursor-pointer">
+                                <option value="paypal">🅿 PayPal</option>
+                                <option value="mastercard">Ⓜ MasterCard</option>
+                                <option value="visa">🆗 Visa Card</option>
+                            </select>
+                        </div>
+                        <p class="text-center">Chaque 10 € que vous donnez permet de fournir un repas nutritif à une famille de quatre personnes.</p>
+                        <div class="text-center">
+                            <button type="submit" id="soumettreBtn" class="bg-[#082A4C] text-white px-10 py-3 rounded font-light hover:bg-[#FFB31A] hover:text-[#082A4C] hover:font-semibold">
+                                Faire un don
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+ <!-- Debut Footer -->
+ <footer class="bg-[#082A4C] text-white py-6 w-full">
+    <!-- Section Copyright -->
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+        <!-- Logo et texte -->
+        <div class="flex flex-col items-center sm:flex-row sm:items-center sm:gap-4">
+          <img src="/images/initiatives/logo-123.png" alt="Logo" class="w-20 mb-4 sm:mb-0">
+          <p class="text-sm text-center sm:text-left">
+            &copy; 2025 CharitySen. Tous droits réservés.
+          </p>
+        </div>
+  
+        <!-- Liens supplémentaires (optionnel) -->
+        <div class="mt-4 sm:mt-0">
+          <ul class="flex flex-col items-center sm:flex-row sm:gap-6">
+            <li><a href="#" class="text-sm hover:text-gray-300">Mentions légales</a></li>
+            <li><a href="#" class="text-sm hover:text-gray-300">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>     
+  <!-- Fin Footer -->
+    
+<!-- Toggle Menu Activation -->
+<script>
+
+    const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    mobileMenuButton.addEventListener('click', () => {
+      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden');
+    });
+
+
+    document.getElementById("monFormulaire").addEventListener("submit",
+        function(event) {
+            event.preventDefault(); // Protection contre toute soumission par défaut
+            alert("Formulaire soumis avec succès !"); // Message de réussite
+            document.getElementById("monFormulaire").reset(); // Vidage du formulaire
+        });
+  
+  </script>
+  
+</body>
+
+</html>

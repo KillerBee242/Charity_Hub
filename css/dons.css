@@ -1,0 +1,11 @@
+body, footer {
+    font-family: outfit;
+}
+
+h2, label {
+    font-family: Jomhuria;
+}
+
+#monFormulaire {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05), -5px -5px 10px rgba(0, 0, 0, 0.05);
+}
